@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark.css">
+</head>
+
+<body>
+
+    <!-- TO Do Container -->
+    <div class="todo-container center-content">
+        <!-- Add Task -->
+        <div class="add-task">
+            <input type="text" class="inp" placeholder="Add New Task">
+            <span class="add">+</span>
+        </div>
+        <!-- Show Task Content -->
+        <div class="task-content">
+        </div>
+    </div>
+    <!-- Stats Tasks -->
+    <div class="state-task center-content">
+        <!-- Count Task -->
+        <div class="count">
+            <span>Tasks</span>
+            <span class="counter">0</span>
+        </div>
+        <!-- Completed Task -->
+        <div class="compelet">
+            <span>Completed</span>
+            <span class="completed">0</span>
+        </div>
+
+        <!-- Delete All Task -->
+        <div class="count">
+            <span class="delete-all">Delete All</span>
+        </div>
+        <!-- Finish All Task -->
+        <div class="compelet">
+            <span class="finish-all">finish All</span>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+    <script src="sweetalert2.min.js"></script>
+</body>
+
+</html>
