@@ -1,131 +1,145 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 body {
-  font-family: Arial, Tahoma, sans-serif;
-  background-color: #fafafa;
-  text-transform: capitalize;
+    font-family: Arial, Tahoma, sans-serif;
+    background-color: #fafafa;
+    text-transform: capitalize;
 }
 .center-content {
-  width: 70%;
-  margin: 20px auto;
+    width: 70%;
+    margin: 20px auto;
 }
+
 .todo-container {
-  background-color: #f1f1f1;
-  margin-top: 50px ;
+    background-color: #f1f1f1;
+    margin-top: 50px;
 }
 .add-task {
-  position: relative;
-  background-color: #000c9caa;
-  padding: 10px 15px;
+    position: relative;
+    background-color: #000c9caa;
+    padding: 10px 15px;
 }
 .add-task .inp {
-  width: 100%;
-  padding: 10px 15px;
-  background-color: #b7bff7aa;
-  border: none;
-  color: #fff;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #b7bff7aa;
+    border: none;
+    color: #fff;
 }
 .add-task .inp::placeholder {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 16px;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
 }
 .add-task .inp:focus {
-  outline: none;
+    outline: none;
 }
 .add-task span {
-  position: absolute;
-  top: 5px;
-  right: 6px;
-  background-color: #d9d5e2;
-  font-size: 30px;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 45px;
-  cursor: pointer;
-  color: #000c9caa;
-  transition: transform 0.4s;
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    background-color: #d9d5e2;
+    font-size: 30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    color: #000c9caa;
+    transition: transform 0.4s;
 }
 .add-task span:hover {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 .add-task span::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 50%;
-  z-index: -1;
-  width: 0%;
-  height: 100%;
-  display: block;
-  opacity: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: -1;
+    width: 0%;
+    height: 100%;
+    display: block;
+    opacity: 0;
 }
 .task-content {
-  padding: 15px;
+    padding: 15px;
 }
-.finish{
-  text-decoration: line-through;
+.finish {
+    text-decoration: line-through;
 }
 .task-content .no-msg {
-  color: #888;
-  display: block;
-  margin-bottom: 10px;
-  text-align: center;
+    color: #888;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
 }
 .task-box,
 .task-content .no-msg {
-  padding: 10px 15px;
-  background-color: #fff;
-  font-size: 18px;
+    padding: 10px 15px;
+    background-color: #fff;
+    font-size: 18px;
 }
 .task-box,
 .state-task {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 992px) {
+    .center-content {
+        width: 100%;
+    }
+    .state-task {
+        display: block;
+    }
+    .state-task div {
+        text-align: center;
+        display: inline-block;
+        width: 49%;
+        margin: 20px auto;
+    }
 }
 .task-box:not(:last-child) {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 .task-box .text-task {
-  line-height: 30px;
+    line-height: 30px;
 }
 .task-box .delete-task {
-  background-color: #f00;
-  color: #fff;
-  padding: 5px 10px;
-  max-height: 30px;
-  border-radius: 6px;
-  cursor: pointer;
+    background-color: #f00;
+    color: #fff;
+    padding: 5px 10px;
+    max-height: 30px;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 .state-task .count .counter,
 .state-task .compelet .completed {
-  display: inline-block;
-  padding: 3px 5px;
-  color: #fff;
-  border-radius: 4px;
+    display: inline-block;
+    padding: 3px 5px;
+    color: #fff;
+    border-radius: 4px;
 }
 .state-task .count .counter {
-  background-color: #f00;
+    background-color: #f00;
 }
 .state-task .compelet .completed {
-  background-color: #4c8ff5;
+    background-color: #4c8ff5;
 }
 
 .delete-all,
-.finish-all{
-  cursor: pointer;
-  color: #fff;
-  padding: 10px 15px;
-  border-radius: 5px;
+.finish-all {
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 .delete-all {
-  background-color: #f00;
+    background-color: #f00;
 }
 .finish-all {
-  background-color: #00f;
-  
+    background-color: #00f;
 }
