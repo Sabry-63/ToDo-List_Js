@@ -10,7 +10,6 @@ body {
     width: 70%;
     margin: 20px auto;
 }
-
 .todo-container {
     background-color: #f1f1f1;
     margin-top: 50px;
@@ -129,7 +128,6 @@ body {
 .state-task .compelet .completed {
     background-color: #4c8ff5;
 }
-
 .delete-all,
 .finish-all {
     cursor: pointer;
@@ -142,4 +140,10 @@ body {
 }
 .finish-all {
     background-color: #00f;
+}
+.lottie-animation {
+
+    position: relative;
+    top: -3px;
+    float: right;
 }
