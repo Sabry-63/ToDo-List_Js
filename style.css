@@ -128,7 +128,6 @@ body {
 .state-task .compelet .completed {
     background-color: #4c8ff5;
 }
-
 .delete-all,
 .finish-all {
     cursor: pointer;
